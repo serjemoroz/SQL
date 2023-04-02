@@ -19,7 +19,15 @@ FROM laptop l
 JOIN product p ON p.model = l.model
 WHERE l.hd >= 10
 
-№7
 
+
+№8
+SELECT DISTINCT maker
+FROM product
+WHERE type='pc'
+except
+SELECT distinct product.maker
+FROM product
+WHERE type='laptop'
 
 
