@@ -1,0 +1,15 @@
+№11
+Select AVG(speed) speed
+From pc
+
+№12
+Select AVG(speed) 
+From laptop
+Where price>1000
+
+№13
+Select AVG (pc.speed) 
+From pc, product
+WHERE pc.model = product.model AND product.maker = 'A'
+
+№14
