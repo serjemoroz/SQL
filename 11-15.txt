@@ -13,3 +13,9 @@ From pc, product
 WHERE pc.model = product.model AND product.maker = 'A'
 
 №14
+
+№15
+SELECT hd
+FROM pc
+GROUP BY (hd)
+HAVING COUNT (hd) >=2
