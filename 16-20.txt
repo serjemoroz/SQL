@@ -1,0 +1,12 @@
+№16
+SELECT DISTINCT B.model AS model, A.model AS model, A.speed, A.ram 
+FROM PC AS A, PC B 
+WHERE A.speed = B.speed AND A.ram = B.ram and A.model < B.mode
+
+№17
+Select distinct type,laptop.model,speed from laptop inner join product on laptop.model= product.model  
+where speed < (select MIN(speed) from pc)
+
+№19
+Select maker ,avg(screen)as Avg_screen 
+from laptop inner join product on laptop.model =  product.model group by maker
