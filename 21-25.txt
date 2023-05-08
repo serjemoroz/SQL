@@ -1,0 +1,7 @@
+21
+Select maker , max(price)as Max_price from pc inner join product on pc.model= product.model  
+
+group by maker
+
+22
+Select speed , avg(price) as Avg_price from pc  where speed > 600 group by speed  
